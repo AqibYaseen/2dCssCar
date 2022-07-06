@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#wrapper{
+    width: 90vw;
+    height: 90vh;
+    background-color: grey;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 4vh;
+}
+#container{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    position: relative;
+}
+.bgc{
+    background-image: url(./img/bg1.gif);
+    width: 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    
+
+
+}   
+.car{
+    position: absolute;
+    top: 60%;
+    z-index: 6;
+
+    height: 300px;
+    width: 300px;
+
+    animation: aim 3s alternate infinite  ;
+    
+}
+
+.car:hover{
+}
+
+@keyframes aim {
+    0%{
+        transform: translateY(-100%) rotate(-100deg);
+    }
+    30%{
+        transform: trasnslateY(-50%) rotate(-10deg);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
